@@ -1,5 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+
+/* Custom Inter Font Faces */
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_24pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --color-error: #B62619;
@@ -41,25 +81,22 @@
 
 body,
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
 }
 
 @layer base {
   html {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
   }
 }
 
 
 
-.hero {
+.hero-bg {
   background: linear-gradient(2.7deg, #0B0527 -6.69%, #181C1E 106.68%);
-}
-
-.hero-text-content {
   background-image: url("../assets/hero-bg.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -72,4 +109,5 @@ html {
 .hero-fader {
   background: linear-gradient(62.28deg, #B62619 18.28%, #7D4CDC 58.15%, #5C43ED 87.66%),
     linear-gradient(7.55deg, #100E24 -23.36%, #110F23 107.79%);
+  backdrop-filter: blur(153px);
 }

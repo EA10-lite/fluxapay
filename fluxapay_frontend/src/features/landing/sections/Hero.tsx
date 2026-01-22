@@ -1,17 +1,27 @@
 import Link from "next/link";
 import { Navbar } from "../components/Navbar";
 
+import transfer_icon_1 from "@/assets/transfer-icon-ngn.svg";
+import transfer_icon_2 from "@/assets/transfer-icon-khs.svg";
+import transfer_icon_3 from "@/assets/transfer-icon-ghs.svg";
+
 const Hero = () => {
     return (
         <div className="hero">
-            <div className="py-12 min-h-screen flex flex-col relative">
+            <div className="py-8 min-h-screen flex flex-col relative">
                 <Navbar />
 
-                <div className="content flex-1 flex items-center justify-center h-full relative">
-                    <div className="hero-text-content relative">
-                        <div className="">
-                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-16 left-0">
-                                <div className="img-icon w-10 h-10 rounded-full" />
+                <div className="content flex-1 flex items-center justify-center h-full relative z-10 w-full max-w-6xl mx-auto">
+                    <div className="hero-text-content">
+                        <div className="w-full max-w-[1022px] bg-[crimson]">
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/3 left-0">
+                                <div className="img-icon w-10 h-10 rounded-full overflow-hidden">
+                                    <img
+                                        src={transfer_icon_1.src}
+                                        className="w-full h-full"
+                                        alt="Transfer Icon NGN"
+                                    />
+                                </div>
                                 <div className="">
                                     <p className="text-xs font-medium text-[#667085]">
                                         Transfer
@@ -21,8 +31,14 @@ const Hero = () => {
                                     </h4>
                                 </div>
                             </div>
-                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-0 left-1/2 -translate-x-1/2">
-                                <div className="img-icon w-10 h-10 rounded-full" />
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/5 left-1/2 -translate-x-1/2">
+                                <div className="img-icon w-10 h-10 rounded-full overflow-hidden">
+                                    <img
+                                        src={transfer_icon_2.src}
+                                        className="w-full h-full"
+                                        alt="Transfer Icon KHS"
+                                    />
+                                </div>
                                 <div className="">
                                     <p className="text-xs font-medium text-[#667085]">
                                         Transfer
@@ -32,8 +48,14 @@ const Hero = () => {
                                     </h4>
                                 </div>
                             </div>
-                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-16 right-0">
-                                <div className="img-icon w-10 h-10 rounded-full" />
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/3 right-0">
+                                <div className="img-icon w-10 h-10 rounded-full overflow-hidden">
+                                    <img
+                                        src={transfer_icon_3.src}
+                                        className="w-full h-full"
+                                        alt="Transfer Icon GHS"
+                                    />
+                                </div>
                                 <div className="">
                                     <p className="text-xs font-medium text-[#667085]">
                                         Transfer
@@ -45,7 +67,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="text-center">
-                            <h1 className="text-5xl font-extrabold text-white text-[3.5rem] leading-[1] tracking-[-0.04em]">
+                            <h1 className="text-5xl font-extrabold  text-white text-[3.5rem] leading-[1] tracking-[-0.04em]">
                                 Accept <i className="text-yellow">Crypto</i> <br />
                                 Get Paid in Fiat Instantly
                             </h1>
@@ -63,7 +85,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="hero-fader w-full absolute bottom-0 h-[322px] left-0 hidden" />
+                <div className="hero-fader w-full absolute bottom-0 h-[20vh] left-0" />
+                <div className="hero-bg  w-full absolute top-0 h-[80vh] left-0" />
             </div>
         </div>
     )
