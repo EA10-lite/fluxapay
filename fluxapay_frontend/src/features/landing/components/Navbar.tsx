@@ -16,8 +16,8 @@ export const Navbar = () => {
     ];
 
     return (
-        <nav className="relative top-6 left-0 right-0 z-50 flex justify-center px-4">
-            <div className="navbar w-full max-w-5xl rounded-xl px-6 py-3 flex items-center justify-between transition-all duration-300 border border-black/10">
+        <nav className="relative top-6 left-0 right-0 z-99 flex justify-center px-4">
+            <div className="navbar w-full max-w-5xl rounded-xl px-4 py-3 flex items-center justify-between transition-all duration-300 border border-black/10">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
                     <Image src={logo} alt="Fluxapay Logo" width={32} height={32} className="w-8 h-8" />

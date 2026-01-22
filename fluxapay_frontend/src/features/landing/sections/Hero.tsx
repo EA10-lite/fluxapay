@@ -6,15 +6,14 @@ import transfer_icon_2 from "@/assets/transfer-icon-khs.svg";
 import transfer_icon_3 from "@/assets/transfer-icon-ghs.svg";
 
 const Hero = () => {
-
     return (
         <div className="hero">
-            <div className="py-8 min-h-screen flex flex-col relative">
+            <div className="py-8 h-screen flex flex-col relative overflow-hidden ">
                 <Navbar />
 
-                <div className="content flex-1 flex items-center justify-center h-full relative z-10 w-full max-w-6xl mx-auto">
+                <div className="content flex-1 flex items-center justify-center h-full relative z-20 w-full max-w-6xl mx-auto">
                     <div className="hero-text-content">
-                        <div className="w-full max-w-[1022px] bg-[crimson]">
+                        <div className="w-full">
                             <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/3 left-0">
                                 <div className="img-icon w-10 h-10 rounded-full overflow-hidden">
                                     <img
@@ -32,7 +31,7 @@ const Hero = () => {
                                     </h4>
                                 </div>
                             </div>
-                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/5 left-1/2 -translate-x-1/2">
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/6 left-1/2 -translate-x-1/2">
                                 <div className="img-icon w-10 h-10 rounded-full overflow-hidden">
                                     <img
                                         src={transfer_icon_2.src}
@@ -78,7 +77,7 @@ const Hero = () => {
 
                             <Link
                                 href="/join"
-                                className="px-5 py-2 text-lg font-semibold text-black bg-white hover:bg-zinc-800 rounded-lg transition-all block w-fit mx-auto"
+                                className="px-5 py-2 text-lg font-semibold text-black bg-white rounded-lg transition-all block w-fit mx-auto"
                             >
                                 Join Fluxapay
                             </Link>
@@ -86,8 +85,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="hero-fader w-full absolute bottom-0 h-[20vh] left-0" />
-                <div className="hero-bg  w-full absolute top-0 h-[80vh] left-0" />
+                <div className="hero-fader w-full absolute -bottom-[25vh] bototm-0 h-[50vh] left-0 z-10" />
+                <div className="hero-bg w-full absolute top-0 h-[80vh] left-0" />
             </div>
         </div>
     )

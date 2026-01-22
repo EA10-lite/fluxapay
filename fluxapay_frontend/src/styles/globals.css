@@ -103,12 +103,29 @@ html {
   background-repeat: no-repeat;
 }
 
-.hero-fader {
+/* .hero-fader {
   background: linear-gradient(7.55deg, #100E24 -23.36%, #110F23 107.79%);
   backdrop-filter: blur(153px);
-}
+} */
 
 .navbar {
   background: linear-gradient(94.85deg, #FFFFFF 0.85%, #FAFAFA 112.11%);
   box-shadow: 0px 2px 2px 0px #48505814;
+}
+
+.hero-fader {
+  background: linear-gradient(7.55deg, #100E24 -23.36%, #110F23 107.79%);
+
+  mask-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 0, 0, 1) 100%);
 }
