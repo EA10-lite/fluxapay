@@ -13,7 +13,7 @@ const Hero = () => {
 
                 <div className="content flex-1 flex items-center justify-center h-full relative z-20 w-full max-w-6xl mx-auto">
                     <div className="hero-text-content">
-                        <div className="w-full">
+                        <div className="w-full hidden lg:block">
                             <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-1/3 left-0">
                                 <div className="img-icon w-10 h-10 rounded-full overflow-hidden">
                                     <img
@@ -85,7 +85,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="hero-fader w-full absolute -bottom-[25vh] bototm-0 h-[50vh] left-0 z-10" />
+                <div className="hero-fader w-full absolute bottom-0 h-[50vh] left-0 z-10" />
                 <div className="hero-bg w-full absolute top-0 h-[80vh] left-0" />
             </div>
         </div>
