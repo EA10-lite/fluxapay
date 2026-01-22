@@ -92,22 +92,23 @@ html {
 
 
 
-.hero-bg {
+.hero {
   background: linear-gradient(2.7deg, #0B0527 -6.69%, #181C1E 106.68%);
+}
+
+.hero-bg {
   background-image: url("../assets/hero-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.hero-fader {
+  background: linear-gradient(7.55deg, #100E24 -23.36%, #110F23 107.79%);
+  backdrop-filter: blur(153px);
+}
+
 .navbar {
   background: linear-gradient(94.85deg, #FFFFFF 0.85%, #FAFAFA 112.11%);
   box-shadow: 0px 2px 2px 0px #48505814;
-}
-
-
-.hero-fader {
-  background: linear-gradient(62.28deg, #B62619 18.28%, #7D4CDC 58.15%, #5C43ED 87.66%),
-    linear-gradient(7.55deg, #100E24 -23.36%, #110F23 107.79%);
-  backdrop-filter: blur(153px);
 }

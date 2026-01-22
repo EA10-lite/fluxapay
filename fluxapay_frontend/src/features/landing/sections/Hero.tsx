@@ -6,6 +6,7 @@ import transfer_icon_2 from "@/assets/transfer-icon-khs.svg";
 import transfer_icon_3 from "@/assets/transfer-icon-ghs.svg";
 
 const Hero = () => {
+
     return (
         <div className="hero">
             <div className="py-8 min-h-screen flex flex-col relative">
