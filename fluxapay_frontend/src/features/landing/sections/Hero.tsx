@@ -1,0 +1,72 @@
+import Link from "next/link";
+import { Navbar } from "../components/Navbar";
+
+const Hero = () => {
+    return (
+        <div className="hero">
+            <div className="py-12 min-h-screen flex flex-col relative">
+                <Navbar />
+
+                <div className="content flex-1 flex items-center justify-center h-full relative">
+                    <div className="hero-text-content relative">
+                        <div className="">
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-16 left-0">
+                                <div className="img-icon w-10 h-10 rounded-full" />
+                                <div className="">
+                                    <p className="text-xs font-medium text-[#667085]">
+                                        Transfer
+                                    </p>
+                                    <h4 className="text-sm font-bold text-gray-900">
+                                        20,000 NGN
+                                    </h4>
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-0 left-1/2 -translate-x-1/2">
+                                <div className="img-icon w-10 h-10 rounded-full" />
+                                <div className="">
+                                    <p className="text-xs font-medium text-[#667085]">
+                                        Transfer
+                                    </p>
+                                    <h4 className="text-sm font-bold text-gray-900">
+                                        5,000 KHS
+                                    </h4>
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-lg py-3 px-6 flex items-center gap-3 absolute top-16 right-0">
+                                <div className="img-icon w-10 h-10 rounded-full" />
+                                <div className="">
+                                    <p className="text-xs font-medium text-[#667085]">
+                                        Transfer
+                                    </p>
+                                    <h4 className="text-sm font-bold text-gray-900">
+                                        5,000 GHS
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <h1 className="text-5xl font-extrabold text-white text-[3.5rem] leading-[1] tracking-[-0.04em]">
+                                Accept <i className="text-yellow">Crypto</i> <br />
+                                Get Paid in Fiat Instantly
+                            </h1>
+                            <p className="py-6 text-[#EFDBFC] text-xl font-medium max-w-2xl mx-auto">
+                                Fluxapay lets merchants accept USDC payments on Stellar and get settled in local fiat with a Stripe-like API and no on-chain complexity.
+                            </p>
+
+                            <Link
+                                href="/join"
+                                className="px-5 py-2 text-lg font-semibold text-black bg-white hover:bg-zinc-800 rounded-lg transition-all block w-fit mx-auto"
+                            >
+                                Join Fluxapay
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="hero-fader w-full absolute bottom-0 h-[322px] left-0 hidden" />
+            </div>
+        </div>
+    )
+}
+
+export default Hero;

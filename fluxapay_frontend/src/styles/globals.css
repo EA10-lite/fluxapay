@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-error: #B62619;
+  --color-black: #2E3539;
+  --color-grey: #6C747D;
+  --color-yellow: #FED449;
+  --radius-xs: 0.125rem;
+  /* 2px */
+  --radius-sm: 0.25rem;
+  /* 4px */
+  --radius-md: 0.5rem;
+  /* 8px */
+  --radius-lg: 0.75rem;
+  /* 12px */
+  --radius-xl: 1rem;
+  /* 16px */
+}
+
+@theme inline {
+  --color-error: #B62619;
+  --color-black: #2E3539;
+  --color-grey: #6C747D;
+  --color-yellow: #FED449;
+  --radius-xs: 0.125rem;
+  /* 2px */
+  --radius-sm: 0.25rem;
+  /* 4px */
+  --radius-md: 0.5rem;
+  /* 8px */
+  --radius-lg: 0.75rem;
+  /* 12px */
+  --radius-xl: 1rem;
+  /* 16px */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
+
+body,
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+
+
+.hero {
+  background: linear-gradient(2.7deg, #0B0527 -6.69%, #181C1E 106.68%);
+}
+
+.hero-text-content {
+  background-image: url("../assets/hero-bg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background: linear-gradient(94.85deg, #FFFFFF 0.85%, #FAFAFA 112.11%);
+  box-shadow: 0px 2px 2px 0px #48505814;
+}
+
+
+.hero-fader {
+  background: linear-gradient(62.28deg, #B62619 18.28%, #7D4CDC 58.15%, #5C43ED 87.66%),
+    linear-gradient(7.55deg, #100E24 -23.36%, #110F23 107.79%);
+}
